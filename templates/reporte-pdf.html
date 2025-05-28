@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #aaa; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+    <h1>Reporte de Actividades</h1>
+    <p><strong>Nombre:</strong> {{ data.nombre }} {{ data.apellido }}</p>
+    <p><strong>RUN:</strong> {{ data.run }}</p>
+    <p><strong>Monto Acumulado:</strong> ${{ data.montoacumulado }}</p>
+
+    <h2>Horas Realizadas</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Actividad</th>
+                <th>Horas</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data.horasrealizadas %}
+            <tr>
+                <td>{{ item.actividad }}</td>
+                <td>{{ item.horas }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

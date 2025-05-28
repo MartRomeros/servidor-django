@@ -1,0 +1,30 @@
+# Entorno virtual (ajusta si usas otro nombre)
+env/
+venv/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Configuraciones locales
+*.env
+*.local
+*.log
+
+# Base de datos local
+db.sqlite3
+
+# Archivos temporales / sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de migración opcionalmente (si quieres regenerarlos cada vez)
+# **Ten cuidado si haces esto**
+# */migrations/
+# !*/migrations/__init__.py
